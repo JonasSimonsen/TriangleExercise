@@ -10,6 +10,11 @@ Coding standarts:
 - Det er god skik at overholde en bestemt navngivingstype alle steder i applikationen, f.eks. camelcase.
 - Sigende navne for alt man navngiver i applikationen.
 - Brug Engelske navne til navngivning.
+- Kommenter koden, til at beskrive hvad der sker.
+- Variabler, fields og metoder skal være private så ofte som muligt, især i model klasser
+- Brug interfaces hvis to klasser har noget til fælles, og hvis det ellers giver mening
+- Lav simple Unit test til at teste komplicerede metoder eller klasser inden de implementeres.
+- Lav new klasser og sub klasser hvis det er mulig og behøves, klasser skal ikke være for store. Hav kun det der er relevant for den bestemte klasse.
 
 
 Test cases
