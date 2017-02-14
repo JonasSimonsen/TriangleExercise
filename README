@@ -1,0 +1,37 @@
+Feedback for Andreas Heindorff Larsen:
+
+Godt program som fungere efter hensigten, god håndtering af input, således at det kun er en int der kan bruges. 
+Samt god håndtering af at siderne ikke kan være 0. 
+Gode korte metoder med sigende navne, pas dog på redudant kode, det fremgår flere steder i applikationen 
+og få fjernet kode som ikke bliver brugt f.eks. directives og parameters, det giver meget unødvendig støj i koden.
+
+Coding standarts:
+
+- Det er god skik at overholde en bestemt navngivingstype alle steder i applikationen, f.eks. camelcase.
+- Sigende navne for alt man navngiver i applikationen.
+- Brug Engelske navne til navngivning.
+
+
+Test cases
+
+       INPUT           EXP. OUTPUT         (OUTPUT) WAIT WITH THIS        Test type
+   ---------------------------------------------------------------------
+   |   7, 7, 7     |   Equilateral     |                               |  Correct type of triangle
+   ---------------------------------------------------------------------
+   |   4, 4, 1     |   Isosceles       |                               |  Correct type of triangle
+   ---------------------------------------------------------------------
+   |   5, 6, 7     |   Scalene         |                               |  Correct type of triangle
+   ---------------------------------------------------------------------
+   |   a, b, c     |   Invalid input   |                               |  Only int numbers allowed
+   ---------------------------------------------------------------------
+   |   -5, 4, 6    |   Invalid input   |                               |  Only positive values
+   ---------------------------------------------------------------------
+   |   0, 4, 4     |   Invalid input   |                               |  No zero values 
+   ---------------------------------------------------------------------
+   |   1, 3, 6     |   Invalid input   |                               |  Inequality test
+   ---------------------------------------------------------------------
+   |   max+1, 4, 8 |   Invalid input   |                               |  Not an integer value
+   ---------------------------------------------------------------------
+
+
+
