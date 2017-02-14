@@ -1,11 +1,25 @@
-Feedback for Andreas Heindorff Larsen:
+1) Static Code Analysis of Triangle program:
+
+Min IDE fortalte mig at den ene methode jeg brugte kunne laves privat da den ikke blev brugt i andre.
+
+Efter at have regnet cyclomatic complexity får jeg 8 for hele programmet og maks 6 for min ene methode. 
+Min IDE (Visual Studio) bruger CC2.
+Den tager +1 for hver boolean check i en - if / if else statement og +1 for hver case statement i en switch statement.
+
+
+
+2) Peer Review of your Triangle program for: Andreas Heindorff Larsen:
+
+Jeg har byttet kode med Andreas: https://github.com/cph-al180/Triangle-Assignment
 
 Godt program som fungere efter hensigten, god håndtering af input, således at det kun er en int der kan bruges. 
 Samt god håndtering af at siderne ikke kan være 0. 
 Gode korte metoder med sigende navne, pas dog på redudant kode, det fremgår flere steder i applikationen 
 og få fjernet kode som ikke bliver brugt f.eks. directives og parameters, det giver meget unødvendig støj i koden.
 
-Coding standarts:
+
+
+3) Coding Standard Document:
 
 - Det er god skik at overholde en bestemt navngivingstype alle steder i applikationen, f.eks. camelcase.
 - Sigende navne for alt man navngiver i applikationen.
@@ -14,10 +28,11 @@ Coding standarts:
 - Variabler, fields og metoder skal være private så ofte som muligt, især i model klasser
 - Brug interfaces hvis to klasser har noget til fælles, og hvis det ellers giver mening
 - Lav simple Unit test til at teste komplicerede metoder eller klasser inden de implementeres.
-- Lav new klasser og sub klasser hvis det er mulig og behøves, klasser skal ikke være for store. Hav kun det der er relevant for den bestemte klasse.
+- Lav new klasser og sub klasser hvis det er mulig og behøves, klasser skal ikke være for store. Inkluder kun det der er relevant for den bestemte klasse.
 
+---------------------------------------------------------------------------------------------------
 
-Test cases
+4) Test cases:
 
        INPUT           EXP. OUTPUT         (OUTPUT) WAIT WITH THIS        Test type
    ---------------------------------------------------------------------
